@@ -9,22 +9,35 @@ div {
 
 nav {
   width: 100%;
+  display: flex;
+  background-color: #333333;
+  justify-content: center;
+  align-items: center;
 }
 
-.navBar {
+nav ul {
+  list-style: none;
   width: 100%;
-  background-color: #333333;
   padding-left: 20px;
   display: flex;
 }
-.navBar li {
+
+.navBar {}
+
+nav ul li {
   padding: 10px 10px;
   list-style: none;
 }
-.navBar li:hover {
+
+nav ul li:hover {
   background-color: #c2b506;
 }
-.navBar li a {
+
+nav ul li a {
   text-decoration: none;
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
