@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./PlayersPresentation.css";
+import { useNavigate } from "react-router-dom";
 
 function PlayersPresentation({ PlayerList }) {
+  const navigation = useNavigate();
   const [player, setPLayer] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +21,14 @@ function PlayersPresentation({ PlayerList }) {
             <h3>{player.name}</h3>
             <p className="title">{player.club}</p>
             <p>
-              <button onClick={() => handlePopup(player)}>Detail</button>
+              <button
+                onClick={
+                  // () => handlePopup(player)
+                  () => navigation("detail/" + player.id)
+                }
+              >
+                Detail
+              </button>
             </p>
           </div>
         </div>
