@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 div {
   width: 100%;
 }
@@ -15,22 +16,9 @@ nav {
   align-items: center;
 }
 
-nav ul {
-  list-style: none;
-  width: 100%;
-  padding-left: 20px;
-  display: flex;
-}
-
-.navBar {}
-
 nav ul li {
   padding: 10px 10px;
   list-style: none;
-}
-
-nav ul li:hover {
-  background-color: #c2b506;
 }
 
 nav ul li a {
@@ -40,4 +28,20 @@ nav ul li a {
 
 a {
   text-decoration: none;
+}
+
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu .brand-logo {
+  left: 10px;
+}
+
+.nav-wrapper {
+  width: 100%;
+  background-color: #01579b;
 }
